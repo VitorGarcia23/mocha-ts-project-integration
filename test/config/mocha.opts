@@ -1,0 +1,4 @@
+--require ts-node/register test/config/prepare.ts
+--reporter mochawesome
+--reporter-options timestamp=true,reportDir=reports,reportFilename=tests
+--slow 5000
