@@ -35,3 +35,4 @@ yarn run tests
 - Flags to be passed:
     - '--file=fileName' where fileName is the name of the test file to run (* is the default value).
     - '--folder=folderName' where folderName is the name of the folder where the test files are (suite is the default value)
+    - '--test=testPattern' where testPattern is the name of the teste you wanna run
