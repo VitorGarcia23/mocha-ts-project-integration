@@ -5,10 +5,10 @@
  * Also you can use it for a global Teardown
  */
 
-before(() => {
+suiteSetup(() => {
     console.log('execute anything before running any tests');
 });
 
-after(() => {
+suiteTeardown(() => {
     console.log('execute anything after running all tests');
-})
+});
