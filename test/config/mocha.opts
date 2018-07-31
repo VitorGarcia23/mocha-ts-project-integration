@@ -1,5 +1,5 @@
---require ts-node/register test/config/prepare.ts
+--recursive out/test/config/prepare.js
 --ui tdd
 --reporter mochawesome
---reporter-options timestamp=true,reportDir=reports,reportFilename=tests
---slow 5000
+--reporter-options timestamp=true,reportDir=TestResults/reports,reportFilename=tests
+--slow 5000		

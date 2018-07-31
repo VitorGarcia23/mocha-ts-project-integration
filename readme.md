@@ -5,7 +5,7 @@ The objective of this project is to provide a structured code that meets the nee
 
 ## Structure
 
-* **reports** : folder that will contain all the tests results in an html file. The name pattern is **tests${date_time}**.
+* **TestResult/reports** : folder that will contain all the tests results in an html file. The name pattern is **tests${date_time}**.
 
 * **tests** : folder that contains all the strucure of the project.
 
@@ -33,6 +33,13 @@ Execute the following command or config a new one on **package.json** scripts.
 yarn run tests
 ```
 - Flags to be passed:
-    - '--file=fileName' where fileName is the name of the test file to run (* is the default value).
-    - '--folder=folderName' where folderName is the name of the folder where the test files are (suite is the default value)
-    - '--test=testPattern' where testPattern is the name of the teste you wanna run
+    - '--file fileName' or '-F fileName' where fileName is the name of the test file to run (* is the default value).
+    - '--path folderPath' or '-P folderPath' where folderName is the name of the folder where the test files are (suite is the default value).
+    - '--Test testPattern' or '-T testPattern' where testPattern is the 'name or pattern' of the test you wanna run.
+    - '--env environment' or '-E environment' where the valid envs are 'dev,stg,prd'.
+
+# Mocha and Chai
+
+- For information on the Mocha (Hooks and other information) access https://mochajs.org/ 
+
+- For reference on how to assert look at http://www.chaijs.com/api/bdd/
