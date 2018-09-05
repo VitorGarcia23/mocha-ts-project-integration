@@ -5,7 +5,7 @@ The objective of this project is to provide a structured code that meets the nee
 
 ## Structure
 
-* **TestResult/reports** : folder that will contain all the tests results in an html file. The name pattern is **tests${date_time}**.
+* **test-result/reports** : folder that will contain all the tests results in an html file. The name pattern is **tests${date_time}**. (File will only be generated when flag -R is passed on command)
 
 * **tests** : folder that contains all the strucure of the project.
 
@@ -35,8 +35,9 @@ yarn run tests
 - Flags to be passed:
     - '--file fileName' or '-F fileName' where fileName is the name of the test file to run (* is the default value).
     - '--path folderPath' or '-P folderPath' where folderName is the name of the folder where the test files are (suite is the default value).
-    - '--Test testPattern' or '-T testPattern' where testPattern is the 'name or pattern' of the test you wanna run.
+    - '--test testPattern' or '-T testPattern' where testPattern is the 'name or pattern' of the test you wanna run.
     - '--env environment' or '-E environment' where the valid envs are 'dev,stg,prd'.
+    - '--report' or '-R' to generate reports when needed.
 
 # Mocha and Chai
 
